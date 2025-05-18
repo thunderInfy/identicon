@@ -17,7 +17,3 @@ $ identicon < robots.txt > hubot.png
 $ cargo test
 $ cargo build
 ```
-
-## License
-
-Identicon is released under the MIT license. Check the LICENSE file for details.
