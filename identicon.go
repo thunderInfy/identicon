@@ -39,7 +39,7 @@ func mapRange(value, vmin, vmax, dmin, dmax uint32) float32 {
 }
 
 func (i *identicon) foreground() color.RGBA {
-	h := uint32(((i.source[12] & 0x0f) << 8) | i.source[13])
+	h := uint32((uint32(i.source[12]) << 8) | uint32(i.source[13]))
 	s := uint32(i.source[14])
 	l := uint32(i.source[15])
 

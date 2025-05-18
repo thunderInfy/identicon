@@ -7,9 +7,9 @@ import (
 )
 
 func TestGenerateIdenticon(t *testing.T) {
-	f, err := os.CreateTemp("", "identicon_*.png")
+	f, err := os.Create("identicon.png")
 	if err != nil {
-		t.Fatalf("failed to create temp file: %v", err)
+		t.Fatalf("failed to create file: %v", err)
 	}
 	defer os.Remove(f.Name())
 	f.Close()
