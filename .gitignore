@@ -1,2 +1,2 @@
-/target
-/Cargo.lock
+# Ignore the compiled binary if built locally
+/identicon
